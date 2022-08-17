@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color-scheme: dark;
+  background-color: black;
+  color: white;
+
+  min-block-size: 100vh;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.layout {
+  min-block-size: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.edit-button {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: yellow;
+  color: black;
+  color-scheme: light;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.edit-field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.edit-field label {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.edit-buttons {
+  margin-block-start: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}

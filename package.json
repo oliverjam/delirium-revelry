@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "wrangler pages dev . --kv DB --experimental-enable-local-persistence --live-reload"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0"
+  }
+}
