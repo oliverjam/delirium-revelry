@@ -7,7 +7,7 @@ export let model = Model("cms::contact::", {
   intro: { type: "longtext" },
 });
 
-export async function onRequestGet({ env }) {
+async function onRequestGet({ env }) {
   let data = await model.get(env.DB);
   let content = Contact(data);
   return Layout({ content });

@@ -1,7 +1,7 @@
 import * as models from "../../model.js";
 import { Layout } from "../../templates/layout.js";
 
-export async function onRequestGet({ params, env }) {
+async function onRequestGet({ params, env }) {
   let page = params.path?.join("/");
   let model = models[page];
   if (!model) {
@@ -14,7 +14,7 @@ export async function onRequestGet({ params, env }) {
   return Layout({ content, css });
 }
 
-export function onRequestPost({ request, params, env }) {
+function onRequestPost({ request, params, env }) {
   let page = params.path?.join("/") || "home";
   let model = models[page];
   if (!model) {
@@ -23,7 +23,7 @@ export function onRequestPost({ request, params, env }) {
   return model.post({ request, env });
 }
 
-export function Edit({ form, preview_url }) {
+function Edit({ form, preview_url }) {
   return /*html*/ `
     <main class="admin-layout">
       ${form}

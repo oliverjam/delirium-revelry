@@ -8,8 +8,8 @@ export let model = Model("cms::home::", {
 });
 
 export async function onRequestGet({ env }) {
-  let data = await model.get(env.DB);
-  let content = Home(data);
+  // let data = await model.get(env.DB);
+  let content = Home({});
   let css = ["home"];
   return Layout({ content, css });
 }
