@@ -1,17 +1,17 @@
-export function Home({ title = "" }) {
+export function Home() {
   return /*html*/ `
-    <div class="layout">
+    <main class="home-layout">
+      <picture class="home-bg">
+        <source type="image/webp" srcset="/assets/img/home-bg.webp" alt="">
+        <img src="/assets/img/home-bg.jpeg" alt="">
+      </picture>
       <header>
-        <a href="/">🥹</a>
-        <nav>
-          <a href="/drinks">Drinks</a>
-          <a href="/bookings">Bookings</a>
-        </nav>
+        <h1>
+          <img src="/assets/img/home-logo.png" alt="Delirium & Revelry. Cocktails, world beers, private events">
+        </h1>
+        <hr>
+        <p class="subheading font-title">Coming soon August 2022</p>
       </header>
-      <main>
-        <h1>${title}</h1>
-      </main>
-      <footer>© Delirium & Revelry 2022</footer>
-    </div>
+    </main>
   `;
 }
