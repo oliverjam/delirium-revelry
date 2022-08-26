@@ -21,10 +21,10 @@ export function Layout({ content, css = [] }) {
             <a href="/">
               <img src="/img/logo-circle.png" alt="Home" width="48" height="48">
             </a>
-            <nav>
+            <!--<nav>
               <a href="/drinks">Drinks</a>
               <a href="/bookings">Bookings</a>
-            </nav>
+            </nav>-->
           </header>
           ${content}
           <footer>
