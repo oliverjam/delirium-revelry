@@ -1,6 +1,6 @@
-import { Model } from "../helpers.js";
-import { Home } from "../templates/home.js";
-import { Layout } from "../templates/layout.js";
+import { Model } from "./helpers.js";
+import { Home } from "./templates/home.js";
+import { Layout } from "./templates/layout.js";
 
 export let model = Model("cms::home::", {
   title: { type: "text" },

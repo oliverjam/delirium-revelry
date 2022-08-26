@@ -1,3 +1,4 @@
 /node_modules
 /wrangler-local-state
 .DS_Store
+_site

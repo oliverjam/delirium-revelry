@@ -1,6 +1,6 @@
-import { Model } from "../helpers.js";
-import { Contact } from "../templates/contact.js";
-import { Layout } from "../templates/layout.js";
+import { Model } from "./helpers.js";
+import { Contact } from "./templates/contact.js";
+import { Layout } from "./templates/layout.js";
 
 export let model = Model("cms::contact::", {
   title: { type: "text" },

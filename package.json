@@ -1,8 +1,20 @@
 {
   "scripts": {
-    "dev": "wrangler pages dev public --kv DB --experimental-enable-local-persistence --live-reload"
+    "dev": "wrangler pages dev . --kv DB --experimental-enable-local-persistence --live-reload",
+    "build": "rm -rf _site && mkdir -p _site && cp -R functions _site && cp -R assets _site"
   },
   "devDependencies": {
     "eslint": "^8.22.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "es2021": true,
+      "worker": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    }
   }
 }

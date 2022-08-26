@@ -10,16 +10,18 @@ export function Layout({ content, css = [] }) {
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Limelight&display=block" rel="stylesheet"> 
-        <link rel="stylesheet" href="/css/base.css" />
+        <link rel="stylesheet" href="/assets/css/base.css" />
         ${css
-          .map((name) => `<link rel="stylesheet" href="/css/${name}.css">`)
+          .map(
+            (name) => `<link rel="stylesheet" href="/assets/css/${name}.css">`
+          )
           .join("")}
       </head>
       <body>
         <div class="layout">
           <header class="site-header font-title">
             <a href="/">
-              <img src="/img/logo-circle.png" alt="Home" width="48" height="48">
+              <img src="/assets/img/logo-circle.png" alt="Home" width="48" height="48">
             </a>
             <!--<nav>
               <a href="/drinks">Drinks</a>
