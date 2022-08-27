@@ -15,7 +15,7 @@ export function Home() {
           >
         </h1>
         <hr>
-        <p class="subheading font-title">Coming soon August 2022</p>
+        <p class="subheading font-title">Now open</p>
       </header>
     </main>
   `;
