@@ -23,10 +23,10 @@ export function Layout({ content, css = [] }) {
             <a href="/">
               <img src="/assets/img/logo-circle.png" alt="Home" width="48" height="48">
             </a>
-            <!--<nav>
+            <nav>
               <a href="/drinks">Drinks</a>
               <a href="/bookings">Bookings</a>
-            </nav>-->
+            </nav>
           </header>
           ${content}
           <footer class="Stack2">
@@ -41,11 +41,11 @@ export function Layout({ content, css = [] }) {
                 </svg> <a href="https://instagram.com/dnr">dnrleeds</a>
               </li>
               <li>
-           <address>
+                <address>
                   <svg viewBox="0 0 20 20" width="20" height="20" fill="white">
                     <use href="/assets/img/icons.svg#pin"></use>
                   </svg> <a href="https://goo.gl/maps/ABeVSR8MXifsi2cg6">52 New Briggate, Leeds LS1 6NU</a>
-           </address>
+                </address>
               </li>
             </ul>
             <p>© Delirium & Revelry ${new Date().getFullYear()}<p>
