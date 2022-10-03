@@ -23,17 +23,32 @@ export function Layout({ content, css = [] }) {
             <a href="/">
               <img src="/assets/img/logo-circle.png" alt="Home" width="48" height="48">
             </a>
-            <!--<nav>
+            <nav>
               <a href="/drinks">Drinks</a>
               <a href="/bookings">Bookings</a>
-            </nav>-->
+            </nav>
           </header>
           ${content}
-          <footer>
-           <p>© Delirium & Revelry ${new Date().getFullYear()}<p>
-           <address>
-            52 New Briggate, <a href="https://goo.gl/maps/ABeVSR8MXifsi2cg6">Leeds LS1 6NU</a>
-           </address>
+          <footer class="Stack2">
+            <ul role="list" class="Stack2">
+              <li>
+                <svg viewBox="0 0 30 30" width="20" height="20" fill="white">
+                  <use href="/assets/img/icons.svg#facebook"></use>
+                </svg> <a href="https://facebook.com/deliriumandrevelry">Delirium and Revelry</a></li>
+              <li>
+                <svg viewBox="0 0 30 30" width="20" height="20" fill="white">
+                  <use href="/assets/img/icons.svg#instagram"></use>
+                </svg> <a href="https://instagram.com/dnr">dnrleeds</a>
+              </li>
+              <li>
+                <address>
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="white">
+                    <use href="/assets/img/icons.svg#pin"></use>
+                  </svg> <a href="https://goo.gl/maps/ABeVSR8MXifsi2cg6">52 New Briggate, Leeds LS1 6NU</a>
+                </address>
+              </li>
+            </ul>
+            <p>© Delirium & Revelry ${new Date().getFullYear()}<p>
           </footer>
         </div>
       </body>
