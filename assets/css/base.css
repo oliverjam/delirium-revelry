@@ -69,18 +69,23 @@ nav a:hover {
 }
 
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--s3);
-  justify-content: space-between;
   font-size: var(--s2);
   padding-block: var(--s3);
   padding-inline: var(--s5);
-  opacity: 0.8;
 }
 
 footer a {
   color: inherit;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer svg {
+  vertical-align: middle;
+}
 }
 
 :is(h1, h2, h3, h4, h5, h6, .font-title) {

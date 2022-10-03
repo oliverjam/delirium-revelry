@@ -29,11 +29,26 @@ export function Layout({ content, css = [] }) {
             </nav>-->
           </header>
           ${content}
-          <footer>
-           <p>© Delirium & Revelry ${new Date().getFullYear()}<p>
+          <footer class="Stack2">
+            <ul role="list" class="Stack2">
+              <li>
+                <svg viewBox="0 0 30 30" width="20" height="20" fill="white">
+                  <use href="/assets/img/icons.svg#facebook"></use>
+                </svg> <a href="https://facebook.com/deliriumandrevelry">Delirium and Revelry</a></li>
+              <li>
+                <svg viewBox="0 0 30 30" width="20" height="20" fill="white">
+                  <use href="/assets/img/icons.svg#instagram"></use>
+                </svg> <a href="https://instagram.com/dnr">dnrleeds</a>
+              </li>
+              <li>
            <address>
-            52 New Briggate, <a href="https://goo.gl/maps/ABeVSR8MXifsi2cg6">Leeds LS1 6NU</a>
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="white">
+                    <use href="/assets/img/icons.svg#pin"></use>
+                  </svg> <a href="https://goo.gl/maps/ABeVSR8MXifsi2cg6">52 New Briggate, Leeds LS1 6NU</a>
            </address>
+              </li>
+            </ul>
+            <p>© Delirium & Revelry ${new Date().getFullYear()}<p>
           </footer>
         </div>
       </body>
