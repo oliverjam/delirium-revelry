@@ -11,8 +11,8 @@ export function Drinks() {
 
       <p><small>All our drinks are prepared in a bar where nuts, drinks containing gluten and other allergens are present and our drinks menu descriptions do not include all ingredients. If you have an allergy or intolerance, please let us know before ordering. Full allergen information for our menu is available upon request.</small></p>
       
-      <section class="Stack5">
-        <header class="Stack">
+      <section class="Stack8">
+        <header class="Stack4">
           <h2>Cocktails</h2>
           <p class="Callout">Elixirs for day or night, our cocktails are crafted with a dreamlike innovision and originality</p>
         </header>
@@ -62,8 +62,8 @@ export function Drinks() {
         </div>
         <p><strong>Fancy something else, or have any requests? Just ask. If it’s possible, we’ll make it happen!</strong></p>
       </section>
-      <section class="Stack5">
-        <header class="Stack">
+      <section class="Stack6">
+        <header class="Stack4">
           <h2>Perfect Pairings</h2>
           <p class="Callout">Recommended by us, these beautifully balanced combinations of quality spirits and artisanal mixers have been hand picked to make the perfect tipple</p>
         </header>
@@ -98,8 +98,8 @@ export function Drinks() {
             </ul>
           </div>
       </section>
-      <section class="Stack5">
-        <header class="Stack">
+      <section class="Stack8">
+        <header class="Stack4">
           <h2>Wine</h2>
           <p class="Callout">The juice of the grape is the liquid quintessence of concentrated sunbeams</p>
         </header>
@@ -197,8 +197,8 @@ export function Drinks() {
 
       </section>
 
-      <section class="Stack5">
-        <header class="Stack">
+      <section class="Stack6">
+        <header class="Stack4">
           <h2>Beer/Cider</h2>
           <p class="Callout">Good people drink good beer, so what are you?</p>
         </header>

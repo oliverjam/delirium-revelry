@@ -93,15 +93,16 @@ footer svg {
 
 :is(h1, h2, h3, .font-title) {
   font-family: var(--font-title);
+  line-height: 1.1;
 }
 
 .vh {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
 
@@ -119,6 +120,10 @@ footer svg {
 
 .Stack5 > * + * {
   margin-top: var(--s5);
+}
+
+.Stack6 > * + * {
+  margin-top: var(--s6);
 }
 
 .Stack8 > * + * {
