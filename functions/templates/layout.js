@@ -26,6 +26,7 @@ export function Layout({ content, css = [] }) {
             <nav>
               <a href="/drinks">Drinks</a>
               <a href="/bookings">Bookings</a>
+              <a href="/brunch">Brunch</a>
             </nav>
           </header>
           ${content}
