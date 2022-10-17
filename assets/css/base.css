@@ -73,7 +73,8 @@ nav a:hover {
 
 footer {
   font-size: var(--s2);
-  padding-block: var(--s3);
+  padding-block-start: var(--s6);
+  padding-block-end: var(--s5);
   padding-inline: var(--s5);
 }
 
