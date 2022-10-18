@@ -26,6 +26,7 @@ export function Layout({ content, css = [] }) {
             <nav>
               <a href="/drinks">Drinks</a>
               <a href="/bookings">Bookings</a>
+              <a href="/brunch">Brunch</a>
             </nav>
           </header>
           ${content}
@@ -48,7 +49,7 @@ export function Layout({ content, css = [] }) {
                 </address>
               </li>
             </ul>
-            <p>© Delirium & Revelry ${new Date().getFullYear()}<p>
+            <p>© Delirium & Revelry ${new Date().getFullYear()}</p>
           </footer>
         </div>
       </body>
