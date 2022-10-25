@@ -24,9 +24,10 @@ export function Layout({ content, css = [] }) {
               <img src="/assets/img/logo-circle.png" alt="Home" width="48" height="48">
             </a>
             <nav>
-              <a href="/drinks">Drinks</a>
-              <a href="/bookings">Bookings</a>
+              <a href="/drinks">Drinks menu</a>
               <a href="/brunch">Brunch</a>
+              <a href="/bookings">Venue bookings</a>
+              <a href="/masterclasses">Masterclasses</a>
             </nav>
           </header>
           ${content}

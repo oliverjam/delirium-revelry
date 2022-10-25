@@ -1,8 +1,8 @@
-import { Bookings } from "./templates/bookings.js";
+import { VenueBookings } from "./templates/bookings.js";
 import { Layout } from "./templates/layout.js";
 
 export async function onRequestGet() {
-  let content = Bookings({});
+  let content = VenueBookings({});
   let css = ["content"];
   return Layout({ content, css });
 }
