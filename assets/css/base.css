@@ -49,15 +49,29 @@ body {
 
 .site-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: var(--s4);
-  padding: var(--s5);
+  padding: var(--s5) var(--s4);
 }
 
-nav {
+.site-header nav ul {
   display: flex;
+  flex-direction: column;
   gap: var(--s3);
+  text-align: center;
+}
+
+@media (min-width: 42em) {
+  .site-header {
+    flex-direction: row;
+  }
+  .site-header nav ul {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 
 nav a {
