@@ -143,3 +143,16 @@ footer svg {
 .Stack8 > * + * {
   margin-top: var(--s8);
 }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  border-radius: 0.5rem;
+  font: inherit;
+  font-weight: bold;
+  background: aqua;
+  padding: var(--s2) var(--s3);
+  color: black;
+  text-decoration: none;
+}

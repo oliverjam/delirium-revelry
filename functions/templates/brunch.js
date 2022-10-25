@@ -1,16 +1,27 @@
+import { BookButton } from "./book-button.js";
+
 export function Brunch() {
   return /*html*/ `
     <main class="Stack8 tac">
-      <header class="Stack4">
-        <h1>DnR Bottomless Brunch - Cheese &amp; Charcuterie</h1>
-        <hr>
-        <p>
-          £29.50 pp, bottomless prosecco or DnR lager, combined with a
+      <div class="Stack5">
+        <header>
+          <h1>Bottomless Brunch - Cheese &amp; Charcuterie</h1>
+          <p class="Callout">£29.50 pp, bottomless prosecco or DnR lager, combined with a
           delectable selection of cheeses and cured meats, and artisan breads,
           crackers and dips to pair them with. Upgrade to bottomless cocktail
-          carafes for an extra £5!
-        </p>
-      </header>
+          carafes for an extra £5!</p>
+        </header>
+        <div class="Stack4">
+          <p>
+            ${BookButton({
+              label: "Book brunch",
+              type: "brunch",
+              people: 2,
+            })}
+          </p>
+          <p><strong>or email info@deliriumbars.com</strong></p>
+        </div>
+      </div>
 
       <section class="Stack4">
         <h2>Classic:</h2>
