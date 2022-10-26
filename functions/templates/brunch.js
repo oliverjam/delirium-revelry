@@ -4,8 +4,8 @@ export function Brunch() {
   return /*html*/ `
     <main class="Stack8 tac">
       <div class="Stack5">
-        <header>
-          <h1>Bottomless Brunch - Cheese &amp; Charcuterie</h1>
+        <header class="Stack4">
+          <h1>Bottomless Brunch<br>Cheese &amp; Charcuterie</h1>
           <p class="Callout">£29.50 pp, bottomless prosecco or DnR lager, combined with a
           delectable selection of cheeses and cured meats, and artisan breads,
           crackers and dips to pair them with. Upgrade to bottomless cocktail

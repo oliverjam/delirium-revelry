@@ -3,7 +3,7 @@ import { BookButton } from "./book-button.js";
 export function Masterclasses() {
   return /*html*/ `
     <main class="Stack5 tac">
-      <header>
+      <header class="Stack4">
         <h1>Masterclasses</h1>
         <p class="Callout">Hen do? Birthday? Just curious to delve into the secrets of mixology? We offer a range of masterclasses, including cocktail & bourbon classes of varying levels of complexity.</p>
       </header>
