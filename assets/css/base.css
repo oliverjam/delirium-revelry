@@ -18,7 +18,7 @@ address {
 }
 
 html {
-  --s: clamp(1rem, 1rem + 1vw, 2rem);
+  --s: clamp(1rem, 1rem + 1vw, 1.5rem);
   --s1: calc(0.25 * var(--s));
   --s2: calc(0.5 * var(--s));
   --s3: calc(0.75 * var(--s));
@@ -44,7 +44,7 @@ body {
   min-block-size: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  row-gap: var(--s4);
+  row-gap: var(--s5);
 }
 
 .site-header {
