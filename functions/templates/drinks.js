@@ -1,15 +1,26 @@
+import { BookButton } from "./book-button.js";
+
 export function Drinks() {
   return /*html*/ `
     <main class="Stack8 tac">
 
-      <header class="Stack4 font-title" style="font-size: 1.5em">
-        <h1 class="vh">Menu</h1>
-        <p>Tonight’s revelry inspires tomorrow’s delirium…</p>
-        <hr>
-        <p>…an ongoing study of libation and guilty pleasures.</p>
-      </header>
+      <div class="Stack5">
+        <header class="Stack4">
+          <h1>Tonight’s revelry inspires tomorrow’s delirium…</h1>
+          <p class="Callout">…an ongoing study of libation and guilty pleasures.</p>
+        </header>
 
-      <p><small>All our drinks are prepared in a bar where nuts, drinks containing gluten and other allergens are present and our drinks menu descriptions do not include all ingredients. If you have an allergy or intolerance, please let us know before ordering. Full allergen information for our menu is available upon request.</small></p>
+        <p>
+          ${BookButton({
+            label: "Book a table",
+            type: "table",
+            people: 2,
+          })}
+        </p>
+
+        <p style="font-size: var(--s3)">All our drinks are prepared in a bar where nuts, drinks containing gluten and other allergens are present and our drinks menu descriptions do not include all ingredients. If you have an allergy or intolerance, please let us know before ordering. Full allergen information for our menu is available upon request.</p>
+      </div>
+
       
       <section class="Stack8">
         <header class="Stack4">

@@ -18,7 +18,7 @@ address {
 }
 
 html {
-  --s: clamp(1rem, 1rem + 1vw, 2rem);
+  --s: clamp(1rem, 1rem + 1vw, 1.5rem);
   --s1: calc(0.25 * var(--s));
   --s2: calc(0.5 * var(--s));
   --s3: calc(0.75 * var(--s));
@@ -44,20 +44,34 @@ body {
   min-block-size: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  row-gap: var(--s4);
+  row-gap: var(--s5);
 }
 
 .site-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: var(--s4);
-  padding: var(--s5);
+  padding: var(--s5) var(--s4);
 }
 
-nav {
+.site-header nav ul {
   display: flex;
+  flex-direction: column;
   gap: var(--s3);
+  text-align: center;
+}
+
+@media (min-width: 42em) {
+  .site-header {
+    flex-direction: row;
+  }
+  .site-header nav ul {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 
 nav a {
@@ -128,4 +142,17 @@ footer svg {
 
 .Stack8 > * + * {
   margin-top: var(--s8);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  border-radius: 0.5rem;
+  font: inherit;
+  font-weight: bold;
+  background: aqua;
+  padding: var(--s2) var(--s3);
+  color: black;
+  text-decoration: none;
 }
