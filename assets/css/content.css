@@ -1,4 +1,4 @@
-main {
+.Content {
   font-size: var(--s4);
   max-inline-size: 52rem;
   margin-inline: auto;
@@ -6,7 +6,7 @@ main {
   padding-inline: var(--s3);
 }
 
-section > header {
+.Content section > header {
   display: grid;
   gap: 1rem;
   max-inline-size: 30rem;
@@ -14,27 +14,27 @@ section > header {
   font-size: 1.125em;
 }
 
-small {
+.Content small {
   font-size: 1rem;
   line-height: 1;
 }
 
-.Callout {
+.Content .Callout {
   border-block: 1px solid;
   padding-block: 1rem;
   font-style: italic;
 }
 
-.MenuList dt {
+.Content .MenuList dt {
   margin-top: 2rem;
   font-weight: bold;
   font-family: var(--font-title);
 }
 
-.MenuList dt:first-child {
+.Content .MenuList dt:first-child {
   margin-top: 0;
 }
 
-.no-abv {
+.Content .no-abv {
   color: hsl(120, 90%, 80%);
 }

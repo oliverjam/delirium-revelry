@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "dev": "wrangler pages dev . --kv DB --persist --live-reload",
-    "build": "rm -rf _site && mkdir -p _site && cp -R functions _site && cp -R assets _site"
+    "dev": "parcel dev 'pages/**/*.html'",
+    "build": "parcel build 'pages/**/*.html'"
   },
   "devDependencies": {
     "eslint": "^8.22.0",
+    "parcel": "^2.7.0",
     "wrangler": "^2.1.9"
   },
   "eslintConfig": {
