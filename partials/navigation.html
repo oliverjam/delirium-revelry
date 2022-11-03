@@ -9,10 +9,20 @@
   </a>
   <nav>
     <ul role="list">
-      <li><a href="/drinks">Menu</a></li>
-      <li><a href="/brunch">Brunch</a></li>
-      <li><a href="/masterclasses">Masterclass</a></li>
-      <li><a href="/bookings">Events</a></li>
+      <li>
+        <a href="/drinks" aria-current="{{ url === '/drinks'}}">Menu</a>
+      </li>
+      <li>
+        <a href="/brunch" aria-current="{{ url === '/brunch'}}">Brunch</a>
+      </li>
+      <li>
+        <a href="/masterclass" aria-current="{{ url === '/masterclass'}}">
+          Masterclass
+        </a>
+      </li>
+      <li>
+        <a href="/bookings" aria-current="{{ url === '/bookings'}}">Events</a>
+      </li>
     </ul>
   </nav>
 </header>

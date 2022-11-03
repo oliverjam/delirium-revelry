@@ -25,3 +25,8 @@
     gap: var(--s3);
   }
 }
+
+nav [aria-current="true"] {
+  text-decoration-line: underline;
+  text-decoration-color: aqua;
+}
