@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "dev": "parcel serve 'pages/**/*.html'",
-    "build": "parcel build 'pages/**/*.html'"
+    "dev": "parcel serve 'pages/**/*.html' --dist-dir _site",
+    "build": "parcel build 'pages/**/*.html' --dist-dir _site"
   },
   "devDependencies": {
     "eslint": "^8.22.0",
