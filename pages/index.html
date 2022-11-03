@@ -5,21 +5,16 @@
     <include src="partials/navigation.html"></include>
     <style>
       main {
-        min-block-size: 60vh;
         display: grid;
       }
       main p {
         grid-area: 1 / 1 / -1 / -1;
-        max-inline-size: 40rem;
-        margin-block-start: calc(var(--s4) + 5vw);
-        margin-inline: calc(var(--s5) + 5vw);
+        padding-inline: var(--gutter);
         font-size: calc(var(--s4) + 4vw);
-        line-height: 1;
-        font-weight: 900;
       }
       main picture {
         grid-area: 1 / 1 / -1 / -1;
-        align-self: end;
+        align-self: center;
         justify-self: end;
         inline-size: 75vw;
         max-inline-size: 60rem;
@@ -29,7 +24,11 @@
     <main>
       <h1 class="vh">Delirium & Revelry bar</h1>
       <p class="Anaglyph font-title">
-        Tonight's revelry inspires tomorrow's delirium.
+        Tonight's<br />
+        revelry<br />
+        inspires<br />
+        tomorrow's<br />
+        delirium.
       </p>
       <picture class="Arch" data-dir="right">
         <source

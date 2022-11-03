@@ -1,8 +1,7 @@
 .Content {
   max-inline-size: 52rem;
   margin-inline: auto;
-  padding-block: var(--s7);
-  padding-inline: var(--s3);
+  padding-inline: var(--gutter);
   text-align: center;
 }
 
@@ -50,7 +49,7 @@
 }
 
 .Anaglyph {
-  filter: drop-shadow(2px 0px 0 fuchsia) drop-shadow(-2px 0 0 aqua);
+  text-shadow: var(--anaglyph);
 }
 
 .vh {

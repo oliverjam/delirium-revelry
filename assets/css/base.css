@@ -8,8 +8,17 @@ html {
   --s6: calc(3 * var(--s));
   --s7: calc(4 * var(--s));
   --s8: calc(6 * var(--s));
+  --gutter: var(--s5);
   --font-title: "Limelight", system-ui, sans-serif;
+  --anaglyph: 2px 0 0 fuchsia, -2px 0 0 aqua;
   color-scheme: dark;
   background-color: black;
   color: white;
+}
+
+body {
+  display: grid;
+  min-block-size: 100vh;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--gutter);
 }
