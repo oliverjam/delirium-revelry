@@ -1,12 +1,12 @@
 {
   "scripts": {
-    "dev": "parcel dev 'pages/**/*.html'",
+    "dev": "parcel serve 'pages/**/*.html'",
     "build": "parcel build 'pages/**/*.html'"
   },
   "devDependencies": {
     "eslint": "^8.22.0",
     "parcel": "^2.7.0",
-    "wrangler": "^2.1.9"
+    "posthtml-include": "^1.7.4",
   },
   "eslintConfig": {
     "env": {
