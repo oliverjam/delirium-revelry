@@ -1,6 +1,12 @@
 footer {
   font-size: var(--s2);
-  padding-block-start: var(--s6);
   padding-block-end: var(--gutter);
   padding-inline: var(--gutter);
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s3);
+  justify-content: center;
 }
