@@ -1,96 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Delirium & Revelry</title>
-    <link rel="icon" type="image/png" href="/assets/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Limelight&display=block"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-  </head>
+  <include src="partials/head.html"></include>
   <body>
-    <div class="layout">
-      <header class="site-header font-title">
-        <a href="/">
-          <img
-            src="/assets/img/logo-circle-full-white.png"
-            alt="Home"
-            width="80"
-            height="80"
-          />
-        </a>
-        <nav>
-          <ul role="list">
-            <li><a href="/drinks">Drinks menu</a></li>
-            <li><a href="/brunch">Brunch</a></li>
-            <li><a href="/masterclasses">Masterclasses</a></li>
-            <li><a href="/bookings">Venue bookings</a></li>
-          </ul>
-        </nav>
+    <include src="partials/navigation.html"></include>
+    <main class="Content Stack5 tac">
+      <header class="Stack4">
+        <h1>Private events</h1>
+        <p class="Callout">Book this space now, for groups up to 120 people!</p>
       </header>
-      <main class="Content Stack5 tac">
-        <header class="Stack4">
-          <h1>Private events</h1>
-          <p class="Callout">
-            Book this space now, for groups up to 120 people!
-          </p>
-        </header>
-        <div class="Stack4">
-          <p>
-            <a
-              href="https://bookings.designmynight.com/book?venue_id=63401eb22c20ba027708eb53&source=partner&type=634a018690baff1bce7fa826&num_people=40"
-              target="_blank"
-              rel="nofollow"
-              class="button"
-            >
-              Book venue
-              <svg
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                width="24"
-                height="24"
-              >
-                <use href="/assets/sprite.svg#calendar" />
-              </svg>
-            </a>
-          </p>
-          <p><strong>or email info@deliriumbars.com</strong></p>
-        </div>
-      </main>
-      <footer class="Stack2">
-        <ul role="list" class="Stack2">
-          <li>
-            <svg viewBox="0 0 30 30" width="20" height="20" fill="white">
-              <use href="/assets/sprite.svg#facebook"></use>
+      <div class="Stack4">
+        <p>
+          <a
+            href="https://bookings.designmynight.com/book?venue_id=63401eb22c20ba027708eb53&source=partner&type=634a018690baff1bce7fa826&num_people=40"
+            target="_blank"
+            rel="nofollow"
+            class="Button"
+          >
+            Book venue
+            <svg viewBox="0 0 20 20" fill="currentColor" width="24" height="24">
+              <use href="/assets/sprite.svg#calendar" />
             </svg>
-            <a href="https://facebook.com/deliriumandrevelry">
-              Delirium and Revelry
-            </a>
-          </li>
-          <li>
-            <svg viewBox="0 0 30 30" width="20" height="20" fill="white">
-              <use href="/assets/sprite.svg#instagram"></use>
-            </svg>
-            <a href="https://instagram.com/dnr">dnrleeds</a>
-          </li>
-          <li>
-            <address>
-              <svg viewBox="0 0 20 20" width="20" height="20" fill="white">
-                <use href="/assets/sprite.svg#pin"></use>
-              </svg>
-              <a href="https://goo.gl/maps/ABeVSR8MXifsi2cg6">
-                52 New Briggate, Leeds LS1 6NU
-              </a>
-            </address>
-          </li>
-        </ul>
-        <p>© Delirium & Revelry 2022</p>
-      </footer>
-    </div>
+          </a>
+        </p>
+        <p><strong>or email info@deliriumbars.com</strong></p>
+      </div>
+    </main>
+    <include src="partials/footer.html"></include>
   </body>
 </html>

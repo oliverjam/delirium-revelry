@@ -1,0 +1,9 @@
+body {
+  font-family: system-ui, sans-serif;
+  font-size: var(--s4);
+}
+
+:is(h1, h2, h3, .font-title) {
+  font-family: var(--font-title);
+  line-height: 1.1;
+}

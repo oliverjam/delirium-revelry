@@ -2,22 +2,48 @@
 <html lang="en">
   <include src="partials/head.html"></include>
   <body>
-    <div class="layout">
-      <include src="partials/navigation.html"></include>
-      <main class="home-layout">
-        <p class="anaglyph font-title">
-          Tonight's revelry inspires tomorrow's delirium.
-        </p>
-        <picture class="arch-right">
-          <source
-            type="image/webp"
-            srcset="/assets/img/delirious-drinks.webp"
-            alt=""
-          />
-          <img src="/assets/img/delirious-drinks.jpg" alt="" loading="lazy" />
-        </picture>
-      </main>
-      <include src="partials/footer.html"></include>
-    </div>
+    <include src="partials/navigation.html"></include>
+    <style>
+      main {
+        min-block-size: 60vh;
+        display: grid;
+      }
+      main p {
+        grid-area: 1 / 1 / -1 / -1;
+        max-inline-size: 40rem;
+        margin-block-start: calc(var(--s4) + 5vw);
+        margin-inline: calc(var(--s5) + 5vw);
+        font-size: calc(var(--s4) + 4vw);
+        line-height: 1;
+        font-weight: 900;
+      }
+      main picture {
+        grid-area: 1 / 1 / -1 / -1;
+        align-self: end;
+        justify-self: end;
+        inline-size: 75vw;
+        max-inline-size: 60rem;
+        z-index: -10;
+      }
+    </style>
+    <main>
+      <h1 class="vh">Delirium & Revelry bar</h1>
+      <p class="Anaglyph font-title">
+        Tonight's revelry inspires tomorrow's delirium.
+      </p>
+      <picture class="Arch" data-dir="right">
+        <source
+          type="image/webp"
+          srcset="/assets/img/delirious-drinks.webp"
+          alt="Three friends toasting three different brightly coloured cocktails"
+        />
+        <img
+          src="/assets/img/delirious-drinks.jpg"
+          alt="Three friends toasting three different brightly coloured cocktails"
+          loading="lazy"
+        />
+      </picture>
+    </main>
+    <include src="partials/footer.html"></include>
   </body>
 </html>

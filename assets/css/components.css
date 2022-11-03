@@ -1,0 +1,64 @@
+.Content {
+  max-inline-size: 52rem;
+  margin-inline: auto;
+  padding-block: var(--s7);
+  padding-inline: var(--s3);
+  text-align: center;
+}
+
+.Stack2 > * + * {
+  margin-top: var(--s2);
+}
+
+.Stack4 > * + * {
+  margin-top: var(--s4);
+}
+
+.Stack5 > * + * {
+  margin-top: var(--s5);
+}
+
+.Stack6 > * + * {
+  margin-top: var(--s6);
+}
+
+.Stack8 > * + * {
+  margin-top: var(--s8);
+}
+
+.Callout {
+  border-block: 1px solid;
+  padding-block: 1rem;
+  font-style: italic;
+}
+
+.Button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  border-radius: 0.5rem;
+  font: inherit;
+  font-weight: bold;
+  background: aqua;
+  padding: var(--s2) var(--s3);
+  color: black;
+  text-decoration: none;
+}
+
+.Arch[data-dir="right"] {
+  clip-path: url("/assets/sprite.svg#arch-right");
+}
+
+.Anaglyph {
+  filter: drop-shadow(2px 0px 0 fuchsia) drop-shadow(-2px 0 0 aqua);
+}
+
+.vh {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

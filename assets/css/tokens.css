@@ -1,0 +1,15 @@
+html {
+  --s: clamp(1rem, 1rem + 1vw, 1.5rem);
+  --s1: calc(0.25 * var(--s));
+  --s2: calc(0.5 * var(--s));
+  --s3: calc(0.75 * var(--s));
+  --s4: calc(1 * var(--s));
+  --s5: calc(2 * var(--s));
+  --s6: calc(3 * var(--s));
+  --s7: calc(4 * var(--s));
+  --s8: calc(6 * var(--s));
+  --font-title: "Limelight", system-ui, sans-serif;
+  color-scheme: dark;
+  background-color: black;
+  color: white;
+}
