@@ -1,11 +1,17 @@
 {
   "scripts": {
-    "dev": "wrangler pages dev . --kv DB --persist --live-reload",
-    "build": "rm -rf _site && mkdir -p _site && cp -R functions _site && cp -R assets _site"
+    "dev": "parcel serve 'pages/**/*.html' --dist-dir _site",
+    "build": "parcel build 'pages/**/*.html' --dist-dir _site"
   },
   "devDependencies": {
     "eslint": "^8.22.0",
-    "wrangler": "^2.1.9"
+    "parcel": "^2.7.0",
+    "posthtml-include": "^1.7.4",
+    "stylelint": "^14.14.0",
+    "stylelint-config-recommended": "^9.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-recommended"
   },
   "eslintConfig": {
     "env": {
