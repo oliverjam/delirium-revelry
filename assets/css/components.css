@@ -1,8 +1,7 @@
-.Content {
+.Center {
   max-inline-size: 52rem;
   margin-inline: auto;
-  padding-inline: var(--gutter);
-  text-align: center;
+  padding: var(--gutter);
 }
 
 .Stack2 > * + * {
@@ -21,6 +20,10 @@
   margin-top: var(--s6);
 }
 
+.Stack7 > * + * {
+  margin-top: var(--s7);
+}
+
 .Stack8 > * + * {
   margin-top: var(--s8);
 }
@@ -29,6 +32,40 @@
   border-block: 1px solid;
   padding-block: 1rem;
   font-style: italic;
+}
+
+.Hero {
+  display: grid;
+  padding-inline: var(--gutter);
+}
+
+.Hero > * {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+.HeroTitle {
+  font-size: calc(var(--s4) + 4vw);
+  font-family: var(--font-title);
+  line-height: 1;
+  text-shadow: var(--anaglyph);
+}
+
+.HeroImage {
+  grid-area: 1 / 1 / -1 / -1;
+  max-block-size: 70rem;
+  max-inline-size: 90%;
+  margin-inline-start: var(--s8);
+  align-self: center;
+  justify-self: end;
+  z-index: -10;
+}
+
+.HeroImage[data-clip="slice"] {
+  clip-path: polygon(40% 0, 100% 0%, 60% 100%, 0% 100%);
+}
+
+.HeroImage[data-clip="half"] {
+  clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .Button {
@@ -64,12 +101,25 @@
   }
 }
 
-.Arch[data-dir="right"] {
-  clip-path: url("/assets/sprite.svg#arch-right");
+.Media {
+  display: grid;
+  gap: var(--gutter);
+  padding-inline: var(--gutter);
 }
 
-.Anaglyph {
-  text-shadow: var(--anaglyph);
+.MediaImage {
+  max-block-size: 50rem;
+  border-radius: 2rem;
+}
+
+@media (min-width: 44rem) {
+  .Media {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .Media[data-dir="rtl"] .MediaImage {
+    order: -1;
+  }
 }
 
 .vh {

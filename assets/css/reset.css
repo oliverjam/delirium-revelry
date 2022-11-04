@@ -4,8 +4,10 @@
 }
 
 img {
+  display: block;
   max-inline-size: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 address {
@@ -30,10 +32,4 @@ a:hover {
 
 svg {
   vertical-align: middle;
-}
-
-picture > :is(source, img) {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }

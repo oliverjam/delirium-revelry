@@ -6,27 +6,33 @@
       src="partials/navigation.html"
       locals='{ "url": "/bookings" }'
     ></include>
-    <main class="Content Stack5 tac">
+    <main class="Hero">
       <header class="Stack4">
-        <h1>Private events</h1>
-        <p class="Callout">Book this space now, for groups up to 120 people!</p>
-      </header>
-      <div class="Stack4">
-        <p>
-          <a
-            href="https://bookings.designmynight.com/book?venue_id=63401eb22c20ba027708eb53&source=partner&type=634a018690baff1bce7fa826&num_people=40"
-            target="_blank"
-            rel="nofollow"
-            class="Button"
-          >
-            Book venue
-            <svg viewBox="0 0 20 20" fill="currentColor" width="24" height="24">
-              <use href="/assets/sprite.svg#calendar" />
-            </svg>
-          </a>
+        <h1 class="vh">Private events</h1>
+        <p class="HeroTitle">
+          Book this<br />
+          space for<br />
+          groups up to<br />
+          120 people
         </p>
-        <p><strong>or email info@deliriumbars.com</strong></p>
-      </div>
+        <a
+          href="https://bookings.designmynight.com/book?venue_id=63401eb22c20ba027708eb53&source=partner&type=634a018690baff1bce7fa826&num_people=40"
+          target="_blank"
+          rel="nofollow"
+          class="Button"
+        >
+          Book venue
+          <svg viewBox="0 0 20 20" fill="currentColor" width="24" height="24">
+            <use href="/assets/sprite.svg#calendar" />
+          </svg>
+        </a>
+      </header>
+      <img
+        class="HeroImage"
+        data-clip="half"
+        src="/assets/img/delirious-bar.jpg"
+        alt="Several comfy booths and tables glowing under a neon Delirium & Revelry logo."
+      />
     </main>
     <include src="partials/footer.html"></include>
   </body>

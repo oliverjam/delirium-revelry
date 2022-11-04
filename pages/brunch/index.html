@@ -6,61 +6,79 @@
       src="partials/navigation.html"
       locals='{ "url": "/brunch" }'
     ></include>
-    <main class="Content Stack8 tac">
-      <div class="Stack5">
+    <main class="Stack8">
+      <section class="Hero">
         <header class="Stack4">
-          <h1>Bottomless Brunch<br />Cheese &amp; Charcuterie</h1>
-          <p class="Callout">
-            £29.50 pp, bottomless prosecco or DnR lager, combined with a
-            delectable selection of cheeses and cured meats, and artisan breads,
-            crackers and dips to pair them with. Upgrade to bottomless cocktail
+          <h1 class="HeroTitle">
+            Bottomless<br />
+            Brunch<br />
+            Cheese &amp;<br />
+            Charcuterie
+          </h1>
+          <p>
+            £29.50pp, bottomless prosecco<br />
+            or DnR lager, with a delectable<br />
+            selection of cheeses, cured meats,<br />
+            artisan breads, crackers & dips.<br />
+            Upgrade to bottomless cocktail<br />
             carafes for an extra £5!
           </p>
+          <a
+            href="https://bookings.designmynight.com/book?venue_id=63401eb22c20ba027708eb53&source=partner&type=634a018690baff1bce7fa829&num_people=2"
+            target="_blank"
+            rel="nofollow"
+            class="Button"
+          >
+            Book brunch
+            <svg viewBox="0 0 20 20" fill="currentColor" width="24" height="24">
+              <use href="/assets/sprite.svg#calendar" />
+            </svg>
+          </a>
         </header>
-        <div class="Stack4">
-          <p>
-            <a
-              href="https://bookings.designmynight.com/book?venue_id=63401eb22c20ba027708eb53&source=partner&type=634a018690baff1bce7fa829&num_people=2"
-              target="_blank"
-              rel="nofollow"
-              class="Button"
-            >
-              Book brunch
-              <svg
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                width="24"
-                height="24"
-              >
-                <use href="/assets/sprite.svg#calendar" />
-              </svg>
-            </a>
-          </p>
-          <p><strong>or email info@deliriumbars.com</strong></p>
-        </div>
-      </div>
+        <img
+          class="HeroImage"
+          data-clip="half"
+          src="/assets/img/delirious-cheese.jpg"
+          alt=""
+        />
+      </section>
 
-      <section class="Stack4">
-        <h2>Classic</h2>
-        <p class="Callout">
-          Smoky Iberico chorizo, pork and fennel salami, Sicilian prosciutto,
-          Serrano ham rollitos, wensleydale and cranberry, yorkshire blue, brie,
-          Gouda, mini mozzarella balls. Served with Haldilki stuffed olives,
-          fresh fruit, sun dried tomatoes, rocket, sourdough bread with balsamic
-          and olive oil and a range of artisanal crackers.
-        </p>
+      <section class="Media" data-dir="rtl" id="meat">
+        <div>
+          <h2 class="HeroTitle">Classic</h2>
+          <p class="">
+            Smoky Iberico chorizo, pork and fennel salami, Sicilian prosciutto,
+            Serrano ham rollitos, wensleydale and cranberry, yorkshire blue,
+            brie, Gouda, mini mozzarella balls. Served with Haldilki stuffed
+            olives, fresh fruit, sun dried tomatoes, rocket, sourdough bread
+            with balsamic and olive oil and a range of artisanal crackers.
+          </p>
+        </div>
+        <img
+          class="MediaImage"
+          src="/assets/img/delirious-brunch-meat.jpg"
+          alt=""
+        />
       </section>
-      <section class="Stack4">
-        <h2>Vegan</h2>
-        <p class="Callout">
-          A selection of vegan cured meats and cheeses such as spanish chorizo,
-          salami, smoked ham, and tofu pastrami, brie, mature cheddar, garlic
-          and herb cream cheese, mini jackfruit sausage rolls, moroccan spiced
-          falafel. Served with olives, red pepper hummus, fruit, rocket,
-          sourdough bread with balsamic and olive oil and vegan crackers.
-        </p>
+      <section class="Media" id="vegan">
+        <div>
+          <h2 class="HeroTitle">Vegan</h2>
+          <p class="">
+            A selection of vegan cured meats and cheeses such as spanish
+            chorizo, salami, smoked ham, and tofu pastrami, brie, mature
+            cheddar, garlic and herb cream cheese, mini jackfruit sausage rolls,
+            moroccan spiced falafel. Served with olives, red pepper hummus,
+            fruit, rocket, sourdough bread with balsamic and olive oil and vegan
+            crackers.
+          </p>
+        </div>
+        <img
+          class="MediaImage"
+          src="/assets/img/delirious-brunch-vegan.jpg"
+          alt=""
+        />
       </section>
-      <section class="Stack4">
+      <section class="Center Stack4" id="info">
         <p>
           <b>
             GF options available on both boards, please just tell us upon

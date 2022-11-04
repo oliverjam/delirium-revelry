@@ -1,47 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <include src="partials/head.html"></include>
+  <include src="partials/head.html" locals='{ "url": "/" }'></include>
   <body>
     <include src="partials/navigation.html" locals='{ "url": "/" }'></include>
-    <style>
-      main {
-        display: grid;
-      }
-      main p {
-        grid-area: 1 / 1 / -1 / -1;
-        padding-inline: var(--gutter);
-        font-size: calc(var(--s4) + 4vw);
-      }
-      main picture {
-        grid-area: 1 / 1 / -1 / -1;
-        align-self: center;
-        justify-self: end;
-        inline-size: 75vw;
-        max-inline-size: 60rem;
-        z-index: -10;
-      }
-    </style>
-    <main>
+    <main class="Hero">
       <h1 class="vh">Delirium & Revelry bar</h1>
-      <p class="Anaglyph font-title">
+      <p class="HeroTitle">
         Tonight's<br />
         revelry<br />
         inspires<br />
         tomorrow's<br />
         delirium.
       </p>
-      <picture class="Arch" data-dir="right">
-        <source
-          type="image/webp"
-          srcset="/assets/img/delirious-drinks.webp"
-          alt="Three friends toasting three different brightly coloured cocktails"
-        />
-        <img
-          src="/assets/img/delirious-drinks.jpg"
-          alt="Three friends toasting three different brightly coloured cocktails"
-          loading="lazy"
-        />
-      </picture>
+      <img
+        class="HeroImage"
+        data-clip="slice"
+        src="/assets/img/delirious-drinks.jpg"
+        alt="Three friends toasting three different brightly coloured cocktails"
+        loading="lazy"
+      />
     </main>
     <include src="partials/footer.html"></include>
   </body>
