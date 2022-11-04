@@ -1,7 +1,6 @@
 footer {
   font-size: var(--s2);
-  padding-block-end: var(--gutter);
-  padding-inline: var(--gutter);
+  padding: var(--gutter);
 }
 
 footer ul {

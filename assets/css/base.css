@@ -20,5 +20,4 @@ body {
   display: grid;
   min-block-size: 100vh;
   grid-template-rows: auto 1fr auto;
-  gap: var(--gutter);
 }
