@@ -8,6 +8,10 @@
   font-size: var(--s3);
 }
 
+.site-header img:hover {
+  filter: drop-shadow(1px 0 0 fuchsia) drop-shadow(-1px 0 0 aqua);
+}
+
 .site-header ul {
   display: flex;
   flex-direction: row;
@@ -16,7 +20,6 @@
 
 @media (min-width: 48em) {
   .site-header {
-    /* flex-direction: row; */
     justify-content: space-between;
   }
   .site-header ul {
