@@ -5,7 +5,7 @@
   },
   "devDependencies": {
     "eslint": "^8.22.0",
-    "parcel": "^2.7.0",
+    "parcel": "^2.8.2",
     "posthtml-include": "^1.7.4",
     "stylelint": "^14.14.0",
     "stylelint-config-recommended": "^9.0.0"
