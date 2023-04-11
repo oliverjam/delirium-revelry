@@ -4,7 +4,6 @@
     "build": "parcel build 'pages/**/*.html' --dist-dir _site"
   },
   "devDependencies": {
-    "eslint": "^8.22.0",
     "parcel": "^2.8.2",
     "posthtml-include": "^1.7.4",
     "stylelint": "^14.14.0",
@@ -12,16 +11,5 @@
   },
   "stylelint": {
     "extends": "stylelint-config-recommended"
-  },
-  "eslintConfig": {
-    "env": {
-      "es2021": true,
-      "worker": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-      "ecmaVersion": "latest",
-      "sourceType": "module"
-    }
   }
 }
