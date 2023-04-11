@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <include src="partials/head.html"></include>
+  <body>
+    <include
+      src="partials/navigation.html"
+      locals='{ "url": "/karaoke" }'
+    ></include>
+    <main class="Stack8">
+      <section class="Hero">
+        <header class="Stack4">
+          <h1 class="HeroTitle">
+            Book our<br />
+            private<br />
+            karaoke<br />
+            room
+          </h1>
+          <p>
+            Sing your heart out in our private karaoke room.<br />
+            It's got space for up to 10 people at £20 per hour.
+          </p>
+          <a
+            href="https://bookings.designmynight.com/book?venue_id=63401eb22c20ba027708eb53&source=partner&type=638e53380ff9d665835b9039&num_people=4"
+            target="_blank"
+            rel="nofollow"
+            class="Button"
+          >
+            Book karaoke
+            <svg viewBox="0 0 20 20" fill="currentColor" width="24" height="24">
+              <use href="/assets/sprite.svg#karaoke" />
+            </svg>
+          </a>
+        </header>
+        <img
+          class="HeroImage"
+          data-clip="half"
+          src="/assets/img/delirious-cheese.jpg"
+          alt=""
+        />
+      </section>
+    </main>
+    <include src="partials/footer.html"></include>
+  </body>
+</html>
