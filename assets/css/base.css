@@ -20,4 +20,6 @@ body {
   display: grid;
   min-block-size: 100vh;
   grid-template-rows: auto 1fr auto;
+  /* Prevent horizontal overflow */
+  grid-template-columns: minmax(0, 1fr);
 }
