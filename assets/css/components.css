@@ -58,14 +58,14 @@
   align-self: center;
   justify-self: end;
   z-index: -10;
-}
 
-.HeroImage[data-clip="slice"] {
-  clip-path: polygon(40% 0, 100% 0%, 60% 100%, 0% 100%);
-}
+  &[data-clip="slice"] {
+    clip-path: polygon(40% 0, 100% 0%, 60% 100%, 0% 100%);
+  }
 
-.HeroImage[data-clip="half"] {
-  clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
+  &[data-clip="half"] {
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
 
 .Button {
@@ -82,22 +82,22 @@
   text-decoration: none;
   background-size: 300% 300%;
   animation: gradient 6s ease-in-out infinite;
-}
 
-.Button:hover {
-  text-decoration: none;
-  animation-play-state: paused;
-}
+  &:hover {
+    text-decoration: none;
+    animation-play-state: paused;
+  }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
 
@@ -105,21 +105,20 @@
   display: grid;
   gap: var(--gutter);
   padding-inline: var(--gutter);
+
+  @media (min-width: 44rem) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    &[data-dir="rtl"] .MediaImage {
+      order: -1;
+    }
+  }
 }
 
 .MediaImage {
   max-block-size: 50rem;
   border-radius: 2rem;
-}
-
-@media (min-width: 44rem) {
-  .Media {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-  .Media[data-dir="rtl"] .MediaImage {
-    order: -1;
-  }
 }
 
 .vh {

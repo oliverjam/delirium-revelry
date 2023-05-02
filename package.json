@@ -12,5 +12,10 @@
   "stylelint": {
     "extends": "stylelint-config-recommended"
   },
-  "browserslist": "> 2%, last 2 versions, not dead"
+  "browserslist": "> 2%, last 2 versions, not dead",
+  "@parcel/transformer-css": {
+    "drafts": {
+      "nesting": true
+    }
+  }
 }
