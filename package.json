@@ -11,5 +11,6 @@
   },
   "stylelint": {
     "extends": "stylelint-config-recommended"
-  }
+  },
+  "browserslist": "> 2%, last 2 versions, not dead"
 }
