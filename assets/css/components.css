@@ -105,19 +105,19 @@
   gap: var(--gutter);
   padding-inline: var(--gutter);
 
-  @media (min-width: 44rem) {
+  @media (min-width: 48rem) {
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
-    &[data-dir="rtl"] .MediaImage {
+    & > img {
+      min-block-size: 40rem;
+      max-block-size: calc(90vh - var(--gutter));
+    }
+
+    &:nth-child(even) > img {
       order: -1;
     }
   }
-}
-
-.MediaImage {
-  max-block-size: 50rem;
-  border-radius: 2rem;
 }
 
 .vh {
