@@ -1,11 +1,11 @@
 footer {
   font-size: var(--s2);
   padding: var(--gutter);
-}
 
-footer ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--s3);
-  justify-content: center;
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s3);
+    justify-content: center;
+  }
 }
