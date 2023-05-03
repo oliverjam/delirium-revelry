@@ -52,12 +52,11 @@
 
 .HeroImage {
   grid-area: 1 / 1 / -1 / -1;
-  max-block-size: 70rem;
-  max-inline-size: 90%;
-  margin-inline-start: var(--s8);
-  align-self: center;
-  justify-self: end;
+  min-block-size: 25rem;
+  max-block-size: calc(90vh - var(--gutter));
+  inline-size: 100%;
   z-index: -10;
+  opacity: 0.8;
 
   &[data-clip="slice"] {
     clip-path: polygon(40% 0, 100% 0%, 60% 100%, 0% 100%);
