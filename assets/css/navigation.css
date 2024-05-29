@@ -1,35 +1,35 @@
 .site-header {
-  padding: var(--gutter);
-  font-size: var(--s3);
+	padding: var(--gutter);
+	font-size: var(--s3);
 
-  @media (min-width: 48em) {
-    justify-content: space-between;
-  }
+	@media (min-width: 48em) {
+		justify-content: space-between;
+	}
 
-  & a[href="/"] {
-    display: flex;
-    justify-content: center;
+	& a[href="/"] {
+		display: flex;
+		justify-content: center;
 
-    &:hover {
-      filter: drop-shadow(1px 0 0 fuchsia) drop-shadow(-1px 0 0 aqua);
-    }
-  }
+		&:hover {
+			filter: drop-shadow(1px 0 0 fuchsia) drop-shadow(-1px 0 0 aqua);
+		}
+	}
 
-  & ul {
-    margin-top: var(--s3);
-    display: flex;
-    gap: var(--s2);
-    overflow-x: auto;
+	& ul {
+		margin-top: var(--s3);
+		display: flex;
+		gap: var(--s2);
+		overflow-x: auto;
 
-    & [aria-current="true"] {
-      text-decoration-line: underline;
-      text-decoration-color: aqua;
-    }
+		& [aria-current="true"] {
+			text-decoration-line: underline;
+			text-decoration-color: aqua;
+		}
 
-    @media (min-width: 48em) {
-      justify-content: center;
-      gap: var(--s3);
-      overflow: initial;
-    }
-  }
+		@media (min-width: 48em) {
+			justify-content: center;
+			gap: var(--s3);
+			overflow: initial;
+		}
+	}
 }

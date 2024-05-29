@@ -1,14 +1,14 @@
 footer {
-  display: grid;
-  gap: var(--s3);
-  justify-content: center;
-  justify-items: center;
-  font-size: var(--s2);
-  padding: var(--gutter);
+	display: grid;
+	gap: var(--s3);
+	justify-content: center;
+	justify-items: center;
+	font-size: var(--s2);
+	padding: var(--gutter);
 
-  & ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--s3);
-  }
+	& ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--s3);
+	}
 }

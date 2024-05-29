@@ -1,35 +1,35 @@
 * {
-  margin: 0;
-  box-sizing: border-box;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 img {
-  display: block;
-  max-inline-size: 100%;
-  height: auto;
-  object-fit: cover;
+	display: block;
+	max-inline-size: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
 address {
-  font-style: normal;
+	font-style: normal;
 }
 
 [role="list"] {
-  list-style: none;
-  padding-inline-start: 0;
+	list-style: none;
+	padding-inline-start: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration-line: none;
-  text-decoration-thickness: 0.125em;
-  text-underline-offset: 0.125em;
+	color: inherit;
+	text-decoration-line: none;
+	text-decoration-thickness: 0.125em;
+	text-underline-offset: 0.125em;
 }
 
 a:hover {
-  text-decoration-line: underline;
+	text-decoration-line: underline;
 }
 
 svg {
-  vertical-align: middle;
+	vertical-align: middle;
 }
