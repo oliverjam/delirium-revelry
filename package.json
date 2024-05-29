@@ -1,21 +1,16 @@
 {
-  "scripts": {
-    "dev": "parcel serve 'pages/**/*.html' --dist-dir _site",
-    "build": "parcel build 'pages/**/*.html' --dist-dir _site"
-  },
-  "devDependencies": {
-    "parcel": "^2.8.2",
-    "posthtml-include": "^1.7.4",
-    "stylelint": "^14.14.0",
-    "stylelint-config-recommended": "^9.0.0"
-  },
-  "stylelint": {
-    "extends": "stylelint-config-recommended"
-  },
-  "browserslist": "> 2%, last 2 versions, not dead",
-  "@parcel/transformer-css": {
-    "drafts": {
-      "nesting": true
-    }
-  }
+	"scripts": {
+		"dev": "parcel serve 'pages/**/*.html' --dist-dir _site",
+		"build": "parcel build 'pages/**/*.html' --dist-dir _site"
+	},
+	"devDependencies": {
+		"parcel": "^2.12.0",
+		"posthtml-include": "^2.0.1"
+	},
+	"browserslist": "> 2%, last 2 versions, not dead",
+	"@parcel/transformer-css": {
+		"drafts": {
+			"nesting": true
+		}
+	}
 }
