@@ -4,20 +4,8 @@
 	padding: var(--gutter);
 }
 
-.Stack2 > * + * {
-	margin-top: var(--s2);
-}
-
 .Stack4 > * + * {
 	margin-top: var(--s4);
-}
-
-.Stack5 > * + * {
-	margin-top: var(--s5);
-}
-
-.Stack6 > * + * {
-	margin-top: var(--s6);
 }
 
 .Stack7 > * + * {
