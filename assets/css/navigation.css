@@ -1,6 +1,7 @@
 .site-header {
 	padding: var(--gutter);
 	font-size: var(--s3);
+	font-family: var(--font-title);
 
 	@media (width >= 40em) {
 		justify-content: space-between;
