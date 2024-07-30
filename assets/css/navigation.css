@@ -2,11 +2,11 @@
 	padding: var(--gutter);
 	font-size: var(--s3);
 
-	@media (min-width: 48em) {
+	@media (width >= 40em) {
 		justify-content: space-between;
 	}
 
-	& a[href="/"] {
+	a[href="/"] {
 		display: flex;
 		justify-content: center;
 
@@ -15,18 +15,18 @@
 		}
 	}
 
-	& ul {
+	ul {
 		margin-top: var(--s3);
 		display: flex;
 		gap: var(--s2);
 		overflow-x: auto;
 
-		& [aria-current="true"] {
+		[aria-current="true"] {
 			text-decoration-line: underline;
 			text-decoration-color: aqua;
 		}
 
-		@media (min-width: 48em) {
+		@media (width >= 40em) {
 			justify-content: center;
 			gap: var(--s3);
 			overflow: initial;
